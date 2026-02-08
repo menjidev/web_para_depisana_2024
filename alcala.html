@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depisana</title>
+    <meta property="og:url" content="https://depisana.com/">
+    <meta property="og:type" content="website">
+    <meta name="description" content="La mejor depilación láser definitiva al mejor precio">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://kit.fontawesome.com/4bedf95414.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/swipper-store.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+</head>
+<body id="body">
+<!-- NAV -->
+<nav class="navbar">
+    <div class="contenedor_imagen_nav">
+    <a href="index.html"><img src="./images/logo-azul.png" class="logo_nav" alt="logo_depisana"></a>
+    </div>
+    <div class="contenedor_burguer_botton_responsive solomovil">
+    <i class="fa-solid fa-bars tamaño_boton_burguer" id="boton_abrir" onclick="abrir_modal_responsive()"></i>
+    </div>
+    <div class="contenedor_navegador_desktop solodesktop">
+        <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li id="precios"><a  href="precios.html">Precios</a></li>
+        <li id="ubicaciones"><a href="#ubicaciones">Ubicaciones</a>
+            <ul class="submenu_2">
+                <div>
+                <li><a href="madrid.html">Depisana Madrid</a></li>
+                <li><a href="alcala.html">Depisana Alcalá de Henares</a></li>
+            </div>
+            </ul>
+        </li>
+        <li><a href="https://depisana.com/reserva">Contacto</a></li>
+    </ul>
+    <div class="contenedor_boton_menu"><button id="pedircita_desktop" class="estilos_botones w500 fade-in" onclick="mostrarModal()">Pedir Cita</button></div>
+</div>
+</nav>
+<div class="contenedor_ul_nav_responsive solomovil" id="modal_responsive">
+    <ul class="dropdown">
+        
+        <li class="dropdown__list">
+        <a href="/index.html" class="dropdown__link">
+            <div class="contenedor_icono_menu"><i class="fa-solid fa-house dropdown__icon"></i></div>
+            <span class="dropdown__span">Inicio</span>
+        </a>
+        </li>
+        <li class="dropdown__list">
+            <a href="/precios.html" class="dropdown__link">
+                <div class="contenedor_icono_menu"><i class="fa-solid fa-tag dropdown__icon"></i></div>
+                <span class="dropdown__span">Precios</span>
+            </a>
+        </li>
+        <li class="dropdown__list">
+            <a href="#" class="dropdown__link">
+                <div class="contenedor_icono_menu"><i class="fa-solid fa-location-dot  dropdown__icon"></i></div>
+                <span class="dropdown__span">Ubicaciones</span>
+                <i class="fa-solid fa-angle-down dropdown__arrow"></i>
+                <input type="checkbox" class="dropdown__check">
+            </a>
+                    <div class="dropdown__content">
+                        <ul class="dropdown__sub">
+                            <li class="dropdown__li">
+                                <a href="/alcala.html" class="dropdown__anchor">Depisana Alcalá</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="/madrid.html" class="dropdown__anchor">Depisana Madrid - Nuevos Ministerios</a>
+                            </li>
+                        </ul>
+                    </div>
+        </li>
+        <li class="dropdown__list">
+            <a href="https://depisana.com/reserva" class="dropdown__link">
+                <div class="contenedor_icono_menu"><i class="fa-solid fa-message dropdown__icon"></i></div>
+                <span class="dropdown__span">Contacto</span>
+            </a>
+        </li>
+    </ul>
+    <!-- <div class="contenedor_boton_menu"><button id="pedircita_desktop" class="estilos_botones w500 fade-in" onclick="mostrarModal()">Pedir Cita</button></div> -->
+</div>
+
+<div class="contenedor_modal_pedir_cita">
+    <div class="modal_contenido">
+        <div>
+        <h2>Pedir Cita</h2>
+        <button class="boton_cerrar" onclick="cerrarModal()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="column">
+        <button class="boton_ubicacion" onclick="ubicacionAlcala()">Depisana Alcalá de Henares</button>
+        <button class="boton_ubicacion" onclick="ubicacionMadrid()">Depisana Madrid - Nuevos Ministerios</button>
+        </div>
+    </div>
+</div>
+<!-- FIN NAV -->
+
+<!-- HEADER IMAGEN Y BOTON RESERVAR-->
+
+    <header class="alcala" id="header_responsive">
+        <div class="contenedor_mensaje_principal fade-in">
+            <p class="w500 blanco">Tus especialistas en</p>
+            <h1>Depilación Láser Alcalá</h1>
+            <p class="w500 blanco">Tu depilación láser de diodo en <b>Alcalá de Henares</b></p>
+        </div>
+        <button class="estilos_botones background_primario w500 fade-in solomovil ">
+            <a href="https://depisana.com/reserva" class="blanco">Reservar</a>
+        </button>
+    </header>
+
+<!-- FIN HEADER IMAGEN Y BOTON RESERVAR-->
+
+    <main>
+
+<!--MAIN TEXTO PRINCIPAL WEB-->
+
+<section class="contenedor_seccion">
+
+        <div class="contenedor_main_texto espacio_arriba espacio_abajo">
+           
+                <p class="textos_principales espacio_arriba">
+
+                    Nuestro centro de <b>depilación láser en Alcalá de Henares</b> está ubicado en la calle <b>Av. López de Figueroa, 35,</b> en una zona de fácil acceso y con todos los servicios necesarios a tu alcance. Nos encontramos en un entorno cómodo y bien comunicado, ideal para que puedas realizar tu tratamiento sin complicaciones.
+
+                </p>
+
+                <h2 class="espacio_arriba espacio_abajo color_primario">¿Cómo llegar a nuestro centro de depilación láser?</h2>
+
+                <p class="textos_principales">
+
+                    Si vienes en coche, dispones de varias opciones de aparcamiento cercanas, lo que garantiza que encuentres estacionamiento sin inconvenientes. Por otro lado, si prefieres el transporte público, estamos muy bien conectados con las líneas de autobuses urbanos que recorren la zona, facilitándote el acceso desde cualquier punto de Alcalá de Henares.
+
+                    Un espacio moderno y acogedor para tu bienestar
+
+                    Nuestro centro cuenta con <b>cabinas completamente equipadas con la última tecnología en depilación láser diodo</b>, garantizando tratamientos efectivos, cómodos y adaptados a tus necesidades. La recepción ha sido diseñada para tu comodidad, con un ambiente moderno y relajante donde podrás disfrutar de agua fresca mientras esperas tu turno. Además, siempre encontrarás información actualizada sobre nuestras <b>ofertas y promociones</b> en pantalla.
+                </p>
+            
+        </div>
+
+    </section>
+
+<!--FIN MAIN TEXTO PRINCIPAL WEB-->
+
+<!--SECCION IFRAME GOOGLE MAPS-->
+
+
+<section class="contenedor_seccion espacio_seccion_abajo">
+    <div class="encabezado espacio_abajo">
+        <h3>¿Dónde Estamos?</h3>
+        <h2>Depilación láser indolora</h2>
+</div>
+<div class="espacio_seccion_abajo espacio_seccion_arriba">
+
+<div class="contenedor_tarjetas_nuevas">
+<a href="https://maps.app.goo.gl/zVecK2jguQ2ntTyGA" style="text-decoration: none;"><div class="tarjeta_contacto_nueva">
+    <p><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i><b>DIRECCIÓN</b></p><br>
+    <p style="color: black;">Calle Av. López de Figueroa, 35 28804</p>
+    <p style="color: black">(Madrid)</p>
+</div>
+</a>
+
+<a href="https://wa.me/34650224472" style="text-decoration: none;"><div class="tarjeta_contacto_nueva">
+    <p><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i><b>WHATSAPP</b></p><br>
+    <p style="color: black;">650 22 44 72</p>
+    
+</div>
+</a>
+
+<a href="tel:650224472" style="text-decoration: none;"><div class="tarjeta_contacto_nueva">
+    <p><i class="fa-solid fa-location-dot" style="margin-right: 10px;"></i><b>TELEFONO</b></p><br>
+    <p style="color: black;">650 22 44 72</p>
+
+</div>
+</a>
+</div>
+
+
+</div>
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.4749606791725!2d-3.3557990153626633!3d40.4868790977585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4249191f907e3b%3A0x39f6d62b04b79d9f!2sDepilaci%C3%B3n%20L%C3%A1ser%20Alcal%C3%A1%20de%20Henares%20%7C%20Depisana!5e0!3m2!1ses!2ses!4v1733063398020!5m2!1ses!2ses" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<!--FIN SECCION IFRAME GOOGLE MAPS-->
+
+
+<section class="contenedor_seccion espacio_seccion_abajo solodesktop">
+
+        <div class="encabezado espacio_seccion_abajo">
+            <h3>Última tecnología en depilación láser</h3>
+            <h2>Nuestro centro</h2>
+        </div>
+      <div class="contenedor_seccion_fotos ">
+        <div class="galeria fade-in">
+        <div class="card_galeria"><img src="../images/Depisana-1_Alcala.webp" alt=""></div>
+        <div class="card_galeria"><img src="../images/Depisana-2_Alcala.webp" alt=""></div>
+        <div class="card_galeria"><img src="../images/Depisana-3_Alcala.webp" alt=""></div>
+        </div>
+        <div class="galeria fade-in">
+            <div class="card_galeria"><img src="../images/Depisana-4_Alcala.webp" alt=""></div>
+            <div class="card_galeria"><img src="../images/Depisana-5_Alcala.webp" alt=""></div>
+            <div class="card_galeria"><img src="../images/Depisana-6_Alcala.webp" alt=""></div>
+            </div>
+    </div>
+    <div class="lightbox">
+        <img src="assets/1.jpg" alt="Imagen 1" class="grande" loading="lazy">
+        <button class="cerrar estilos_botones">Cerrar</button>
+    </div>
+</section>
+
+<section class="contenedor_seccion espacio_seccion_abajo solomovil">
+
+    <div class="encabezado espacio_seccion_arriba espacio_abajo">
+        <h3>Nuestros servicios</h3>
+        <h2>Depilación láser indolora</h2>
+    </div>
+<div class="swiper myNewSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/depisana-alcala-1.jpg" alt="Foto 1"></div>
+      <div class="swiper-slide"><img src="images/depisana-alcala-2.png" alt="Foto 2"></div>
+      <div class="swiper-slide"><img src="images/depisana-alcala-3.jpg" alt="Foto 3"></div>
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</section>
+
+    </main>
+
+<section class="contenedor_seccion espacio_seccion_abajo">
+    <div class="encabezado espacio_abajo">
+        <h3>Los mejores precios con el mejor servicio</h3>
+        <h2>Nuestros Precios</h2>
+    </div>
+
+    
+    <div class="contenedor_main_texto espacio_abajo ">
+        <p class="textos_principales">
+            Descubre todos los servicios de depilación láser diodo que ofrecemos en Depisana Laser Madrid, tu centro de confianza
+            para la depilación definitiva.
+        </p>
+    </div>
+    </div>
+    <!--DEPILACION MUJER-->
+
+    <div class="contenedor_tarjetas_hombre-mujer espacio_seccion_abajo">
+        
+        
+        
+        <div class="carta">
+            <a href="precios.html"><div class="banner_fotografia"></div></a>
+            <div class="contenedor_main_texto espacio_seccion_abajo">
+                <p class="textos_principales">
+                    Descubre todos nuestros packs de depilación láser para mujer y experimenta la eficacia de la
+                    depilación láser para eliminar el vello de forma segura y cómoda. ¡Disfruta de una piel perfecta con
+                    cada sesión!
+                </p>    
+            </div>
+            <div> 
+            <a href="/precios.html" class="estilos_botones fade-in ">Depilación Láser Hombre</a>
+            </div>
+        </div>
+        
+    
+
+    <!--DEPILACION HOMBRE-->
+
+    <div class="carta">
+        <a href="precios.html"><div class="banner_fotografia hombre"></div></a>
+        <div class="contenedor_main_texto espacio_seccion_abajo">
+            <p class="textos_principales">
+                Descubre todos nuestros packs de depilación láser para mujer y experimenta la eficacia de la
+                depilación láser para eliminar el vello de forma segura y cómoda. ¡Disfruta de una piel perfecta con
+                cada sesión!
+            </p>    
+        </div>
+        <div> 
+        <a href="/precios.html" class="estilos_botones padding fade-in ">Depilación Láser Hombre</a>
+        </div>
+    </div>
+
+</div>
+
+
+        <!-- <div class="contenedor_modal_verMas">
+
+            <div>
+                <h2 class="color_secundario espacio_abajo espacio_arriba">PRECIOS CHICA</h2>
+            </div>
+    
+            <div class="contenedor_ofertas ">
+                <div class="oferta_fila espacio_abajo">
+                    <div class="circulo_precio">29€</div>
+                    <div class="description_oferta">
+                        <p><b>Ingles + Pubis + Perianal</b></p>
+                    </div>
+                </div>
+
+                <div class="oferta_fila espacio_abajo">
+                    <div class="circulo_precio">55€</div>
+                    <div class="description_oferta">
+                        <p><b>Axilas + Ingles + Pubis + Perianal + Medias Piernas + Pies</b></p>
+                    </div>
+                </div>
+                <div class="oferta_fila espacio_abajo">
+                    <div class="circulo_precio">69€</div>
+                    <div class="description_oferta">
+                        <p><b>Axilas + Ingles + Pubis + Perianal + Facial + Piernas completas + Pies</b></p>
+                    </div>
+                </div>
+
+                <div class="oferta_fila">
+                    <div class="circulo_precio">79€</div>
+                    <div class="description_oferta">
+                        <p><b>Cuerpo entero</b></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                <h2 class="color_secundario espacio_abajo espacio_arriba">PRECIOS CHICO</h2>
+            </div>
+
+            <div class="contenedor_ofertas ">
+                <div class="oferta_fila espacio_abajo">
+                    <div class="circulo_precio chicos_circulo_precio">25€</div>
+                    <div class="description_oferta">
+                        <p><b>Perfilado de barba <br> + Cara + Cuello</b></p>
+                    </div>
+                </div>
+
+                <div class="oferta_fila espacio_abajo">
+                    <div class="circulo_precio chicos_circulo_precio">49€</div>
+                    <div class="description_oferta">
+                        <p><b>Pecho + Abdomen + Hombros</b></p>
+                    </div>
+                </div>
+                <div class="oferta_fila espacio_abajo">
+                    <div class="circulo_precio chicos_circulo_precio">64€</div>
+                    <div class="description_oferta">
+                        <p><b>Gluteos + Piernas Completas + Pies</b></p>
+                    </div>
+                </div>
+
+                <div class="oferta_fila">
+                    <div class="circulo_precio chicos_circulo_precio">109€</div>
+                    <div class="description_oferta">
+                        <p><b>Cuerpo entero</b></p>
+                    </div>
+                </div>
+
+            </div> -->
+
+</section>
+
+
+<!--SECCION FOOTER-->
+    <!-- <footer class="background_primario solomovil">
+        <div class="espacio_arriba"><img src="../images/Letra-blanca.png" alt=""></div>
+        <div class="columna-footer espacio_arriba">
+            <h4>Depilación láser hombre</h4>
+            <ul>
+                <li><a href="">Depilación láser espalda completa hombre</a></li>
+                <li><a href="">Depilación láser axilas hombre</a></li>
+                <li><a href="">Depilación láser piernas hombre</a></li>
+                <li><a href="">Depilación láser pecho completo hombre</a></li>
+                <li><a href="">Depilación láser genitales hombre</a></li>
+                <li><a href="">Depilación láser nuca hombre</a></li>
+                <li><a href="">Depilación láser barba hombre</a></li>
+                <li><a href="">Depilación láser orejas hombre</a></li>
+            </ul>
+            
+        </div>
+        <div class="columna-footer espacio_arriba">
+            <h4>Depilación láser mujer</h4>
+            <ul>
+                <li><a href="">Depilación láser axilas mujer</a></li>
+                <li><a href="">Depilación láser labio superior mujer</a></li>
+                <li><a href="">Depilación láser medias piernas mujer</a></li>
+                <li><a href="">Depilación láser mentón mujer</a></li>
+                <li><a href="">Depilación láser zona intima mujer</a></li>
+                <li><a href="">Depilación láser pubis mujer</a></li>
+                <li><a href="">Depilación láser ingles mujer</a></li>
+            </ul>
+        </div>
+        <div class="columna-footer espacio_arriba">
+            <h4>Conócenos:</h4>
+            <ul>
+                <li><a href="">Precios</a></li>
+                <li><a href="">Nuestras Instalaciones</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Precio Amigo</a></li>
+            </ul>
+        </div>
+        <h2 class="blanco espacio_arriba espacio_abajo">REDES SOCIALES</h2>
+        <div class="fila-footer">
+            <div class="contenedor-contacto">    
+                <a href="https://www.facebook.com/p/Depisana-100083395516307/"><i class="fa-brands fa-facebook-f"></i></a>
+                <div>
+                <p><b>Facebook</b></p>
+                </div>
+            </div>
+            <div class="contenedor-contacto">    
+                <a href="https://www.instagram.com/depisanalaser/"><i class="fa-brands fa-instagram"></i></a>
+                <div>
+                <p><b>Instagram</b></p>
+                </div>
+            </div>
+        </div>
+        <div class=""><img src="../images/Sin título-1.png" alt=""></div>
+        <div class="fila-footer condiciones espacio_arriba">
+            <p>Designed by Cristian Menjíbar López</p>
+            <p>© 2025 Depisana. Todos los derechos reservados. <br><a href="">Política de privacidad, condiciones de ofertas y aviso legal</a></p>
+        </div>
+        <div class="container_fixed_wp">
+           <a href="https://depisana.com/whatsapp"><img src="../images/WhatsApp.svg.webp" alt="WhatsAppicono"></a>
+        </div>
+    </footer> -->
+
+
+    <footer class="background_primario">
+        <div class="contenedor-footer-colum centro">
+           <img src="./images/Letra-blanca.png" alt="">
+        </div>
+        <div class="contenedor-footer-colum">
+        <div class="columna-footer-row">  
+         <div class="columna-footer-desktop">
+            <h4>Depilación láser hombre</h4>
+            <!-- <ul>
+                <li><a href="">Depilación láser espalda completa hombre</a></li>
+                <li><a href="">Depilación láser axilas hombre</a></li>
+                <li><a href="">Depilación láser piernas hombre</a></li>
+                <li><a href="">Depilación láser pecho completo hombre</a></li>
+                <li><a href="">Depilación láser genitales hombre</a></li>
+                <li><a href="">Depilación láser nuca hombre</a></li>
+                <li><a href="">Depilación láser barba hombre</a></li>
+                <li><a href="">Depilación láser orejas hombre</a></li>
+            </ul> -->
+         </div>
+         <div class="columna-footer-desktop">
+            <h4>Depilación láser mujer</h4>
+            <!-- <ul>
+                <li><a href="">Depilación láser axilas mujer</a></li>
+                <li><a href="">Depilación láser labio superior mujer</a></li>
+                <li><a href="">Depilación láser medias piernas mujer</a></li>
+                <li><a href="">Depilación láser mentón mujer</a></li>
+                <li><a href="">Depilación láser zona intima mujer</a></li>
+                <li><a href="">Depilación láser pubis mujer</a></li>
+                <li><a href="">Depilación láser ingles mujer</a></li>
+            </ul> -->
+         </div>
+         <div class="columna-footer-desktop">
+            <h4>Conócenos:</h4>
+            <ul>
+                <li><a href="">Precios</a></li>
+                <li><a href="">Nuestras Instalaciones</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Precio Amigo</a></li>
+            </ul>
+        </div>
+        <div class="columna-footer-desktop">
+            <h4>Redes Sociales</h4>
+            <div class="contenedor_rrss">
+                <a href="https://www.facebook.com/p/Depisana-100083395516307/" rel="nofollow noopener noreferrer" target="blank"><i class="fa-brands fa-facebook-f"></i><b>Facebook</b></a>
+                <a href="https://www.instagram.com/depisanalaser/" rel="nofollow noopener noreferrer" target="blank"><i class="fa-brands fa-instagram"></i><b>Instagram</b></p></a>
+                <div class=""><img src="./images/Sin título-1.png" alt=""></div>
+            </div> 
+        </div>
+        </div>
+        <div class="contenedor-footer-colum centro size12">
+            <p>Designed by Cristian Menjíbar López</p>
+            <p>© 2025 Depisana. Todos los derechos reservados. <br><a href="#">Política de privacidad, condiciones de ofertas y aviso legal</a></p>
+        </div>
+        </div>
+        <div class="container_fixed_wp">
+            <a href="https://depisana.com/whatsapp"><img src="./images/WhatsApp.svg.webp" alt="WhatsAppicono"></a>
+         </div>
+    </footer>
+
+
+    <!--SECCION FOOTER-->
+    <!-- Swiper CDN JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- JS -->
+    <script src="js/js.js"></script>
+    <script src="js/swipper-store.js"></script>
+
+</body>
+</html>

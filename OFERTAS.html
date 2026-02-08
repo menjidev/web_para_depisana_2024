@@ -1,0 +1,145 @@
+<!-- <div><button onclick="verMas()">Ver mas <i class="fa-solid fa-caret-down"></i></button></div> -->
+            <!-- <div class="contenedor_modal_verMas" id="modal_chicas">
+                <div class="encabezado_modal_verMas">
+                    <h2 onclick="verMas()">PACKS ESTRELLA <i class="fa-solid fa-caret-down" id="icono_mujer" onclick="verMas()"></i></h2>
+                </div>
+                <div class="contenedor_ofertas ">
+                    <div class="oferta_fila espacio_abajo">
+                        <div class="circulo_precio">29€</div>
+                        <div class="description_oferta">
+                            <p><b>Ingles + Pubis + Perianal</b></p>
+                        </div>
+                    </div>
+                    <div class="oferta_fila espacio_abajo">
+                        <div class="circulo_precio">55€</div>
+                        <div class="description_oferta">
+                            <p><b>Axilas + Ingles + Pubis + Perianal + Medias Piernas + Pies</b></p>
+                        </div>
+                    </div>
+                    <div class="oferta_fila espacio_abajo">
+                        <div class="circulo_precio">69€</div>
+                        <div class="description_oferta">
+                            <p><b>Axilas + Ingles + Pubis + Perianal + Facial + Piernas completas + Pies</b></p>
+                        </div>
+                    </div>
+                    <div class="oferta_fila">
+                        <div class="circulo_precio">79€</div>
+                        <div class="description_oferta">
+                            <p><b>Cuerpo entero</b></p>
+                        </div>
+                    </div>
+                    <div class="ver_mas_container"><a href="#">Ver más</a></div>
+                </div>
+            </div> -->
+
+
+            .contenedor_modal_verMas {
+                margin-top: 10px;
+                display: flex;
+                overflow: hidden;
+                width: 90%; 
+                height: 100px;
+                flex-direction: column;
+                /* border: 0px solid var(--color-primario); */
+                border-radius: 25px;
+                transition: height 0.5s ease-in; 
+            }
+
+            .oferta_fila{
+                display: flex;
+                align-items: center;
+                
+            }
+
+
+            .contenedor_ofertas{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border: 1px solid #ccc;
+                border-radius: 15px;
+                padding: 30px;
+                width: 100%;
+                margin-top: 10px;
+                margin-bottom: 30px;
+            }
+            
+            
+            
+            .encabezado_modal_verMas{
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                padding: 20px;
+            }
+            
+            .encabezado_modal_verMas h2{
+                background-color: var(--color-primario);
+                color: var(--blanco);
+                padding: 10px 35px;
+                border-radius: 25px;
+            
+            }
+            
+            .encabezado_modal_verMas i{
+                margin-left: 10px;
+            }
+            
+            
+            .subencabezado{
+                display: flex;
+                color: var(--rosa);
+                justify-content: center;
+            }
+            
+            .circulo_precio{
+                display: flex;
+                font-size: 26px;
+                font-weight: 600;
+                align-items: center;
+                justify-content: center;
+                color: var(--blanco);
+                border-radius: 50%;
+                background-color: var(--rosa);
+                width: 80px;
+                height: 80px;
+                flex-shrink: 0;
+            }
+            
+            .description_oferta{
+                display: flex;
+                width: 100%;
+                
+                padding-left: 30px;
+            }
+            
+            .ver_mas_container{
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                height: 40px;
+            }
+            
+            .ver_mas_container a{
+                color: black;
+                font-weight: bold;
+            }
+
+
+
+
+
+            // var modal_chicas = document.getElementById('modal_chicas');
+// var icono_mujer = document.getElementById('icono_mujer');
+
+// function verMas() {
+//     if (modal_chicas.style.height == '95px') {
+//         icono_mujer.classList.replace('fa-caret-down', 'fa-caret-up');
+//         modal_chicas.style.width = '90%';
+//         modal_chicas.style.height = '650px';
+    
+//     } else {
+//         modal_chicas.style.height = '95px';
+//         icono_mujer.classList.replace('fa-caret-up', 'fa-caret-down');
+//     }
+// }

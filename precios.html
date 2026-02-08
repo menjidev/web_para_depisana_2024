@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Depisana</title>
+        <meta property="og:url" content="https://depisana.com/">
+        <meta property="og:type" content="website">
+        <meta name="description" content="La mejor depilación láser definitiva al mejor precio">
+        <link rel="stylesheet" href="css/responsive.css">
+        <script src="https://kit.fontawesome.com/4bedf95414.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/swipper.css">
+        <link rel="stylesheet" href="css/swipper-testimonios.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="icon" href="../images/favicon.png" type="image/png">
+    </head>
+<body id="body">
+<!-- NAV -->
+<nav class="navbar">
+    <div class="contenedor_imagen_nav">
+    <a href="index.html"><img src="./images/logo-azul.png" class="logo_nav" alt="logo_depisana"></a>
+    </div>
+    <div class="contenedor_burguer_botton_responsive solomovil">
+    <i class="fa-solid fa-bars tamaño_boton_burguer" id="boton_abrir" onclick="abrir_modal_responsive()"></i>
+    </div>
+    <div class="contenedor_navegador_desktop solodesktop">
+        <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li id="precios"><a  href="precios.html">Precios</a></li>
+        <li id="ubicaciones"><a href="#ubicaciones">Ubicaciones</a>
+            <ul class="submenu_2">
+                <div>
+                <li><a href="madrid.html">Depisana Madrid</a></li>
+                <li><a href="alcala.html">Depisana Alcalá de Henares</a></li>
+            </div>
+            </ul>
+        </li>
+        <li><a href="https://depisana.com/reserva">Contacto</a></li>
+    </ul>
+    <div class="contenedor_boton_menu"><button id="pedircita_desktop" class="estilos_botones w500 fade-in" onclick="mostrarModal()">Pedir Cita</button></div>
+</div>
+</nav>
+<div class="contenedor_ul_nav_responsive solomovil" id="modal_responsive">
+    <ul class="dropdown">
+        
+        <li class="dropdown__list">
+        <a href="/index.html" class="dropdown__link">
+            <div class="contenedor_icono_menu"><i class="fa-solid fa-house dropdown__icon"></i></div>
+            <span class="dropdown__span">Inicio</span>
+        </a>
+        </li>
+        <li class="dropdown__list">
+            <a href="/precios.html" class="dropdown__link">
+                <div class="contenedor_icono_menu"><i class="fa-solid fa-tag dropdown__icon"></i></div>
+                <span class="dropdown__span">Precios</span>
+            </a>
+        </li>
+        <li class="dropdown__list">
+            <a href="#" class="dropdown__link">
+                <div class="contenedor_icono_menu"><i class="fa-solid fa-location-dot  dropdown__icon"></i></div>
+                <span class="dropdown__span">Ubicaciones</span>
+                <i class="fa-solid fa-angle-down dropdown__arrow"></i>
+                <input type="checkbox" class="dropdown__check">
+            </a>
+                    <div class="dropdown__content">
+                        <ul class="dropdown__sub">
+                            <li class="dropdown__li">
+                                <a href="/alcala.html" class="dropdown__anchor">Depisana Alcalá</a>
+                            </li>
+                            <li class="dropdown__li">
+                                <a href="/madrid.html" class="dropdown__anchor">Depisana Madrid - Nuevos Ministerios</a>
+                            </li>
+                        </ul>
+                    </div>
+        </li>
+        <li class="dropdown__list">
+            <a href="https://depisana.com/reserva" class="dropdown__link">
+                <div class="contenedor_icono_menu"><i class="fa-solid fa-message dropdown__icon"></i></div>
+                <span class="dropdown__span">Contacto</span>
+            </a>
+        </li>
+    </ul>
+    <!-- <div class="contenedor_boton_menu"><button id="pedircita_desktop" class="estilos_botones w500 fade-in" onclick="mostrarModal()">Pedir Cita</button></div> -->
+</div>
+
+<div class="contenedor_modal_pedir_cita">
+    <div class="modal_contenido">
+        <div>
+        <h2>Pedir Cita</h2>
+        <button class="boton_cerrar" onclick="cerrarModal()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="column">
+        <button class="boton_ubicacion" onclick="ubicacionAlcala()">Depisana Alcalá de Henares</button>
+        <button class="boton_ubicacion" onclick="ubicacionMadrid()">Depisana Madrid - Nuevos Ministerios</button>
+        </div>
+    </div>
+</div>
+<!-- FIN NAV -->
+
+<!-- HEADER IMAGEN Y BOTON RESERVAR-->
+
+<header id="header_responsive">
+    <div class="contenedor_mensaje_principal fade-in">
+        <p class="w500">Depisana</p>
+        <h1>Nuestros Precios</h1>
+        <p class="w500">Bonos o sesiones sueltas <br> ¡Tú eliges!</p>
+    </div>
+        <button id="pedircita_desktop" class="estilos_botones w500 fade-in solomovil" onclick="mostrarModal()">Reservar</button>
+    
+</header>
+
+<!-- FIN HEADER IMAGEN Y BOTON RESERVAR-->
+
+    <main>
+
+<!--MAIN TEXTO PRINCIPAL WEB-->
+
+
+
+    
+
+<section  class="contenedor_seccion espacio_seccion_arriba">
+    <div class="encabezado espacio_arriba">
+        <h3>Tratamientos TOP, al mejor precio</h3>
+        <h2>Packs Estrella</h2>
+    </div>
+
+    <section class="contenedor_seccion">
+
+        <div class="contenedor_main_texto espacio_arriba espacio_abajo">
+           
+                <p class="textos_principales espacio_arriba">
+
+                    Descubre nuestros Packs Estrella y disfruta de los tratamientos más demandados con descuentos exclusivos. ¡Elimina el vello de forma definitiva y luce una piel suave todo el año!
+                    sesiones personalizadas con tecnología láser de última generación, reserva ahora y empieza tu cambio hoy mismo.
+
+                </p>
+            
+        </div>
+
+    </section>
+    <div class="contenedor_modal_verMas espacio_arriba">
+
+    
+        <div class="contenedor_ofertas ">
+            <h2 class="rosa espacio_abajo">PRECIOS CHICA</h2>
+            <div class="oferta_fila espacio_abajo">
+                <div class="circulo_precio">29€</div>
+                <div class="description_oferta">
+                    <p><b>Ingles + Pubis + Perianal</b></p>
+                </div>
+            </div>
+
+            <div class="oferta_fila espacio_abajo">
+                <div class="circulo_precio">55€</div>
+                <div class="description_oferta">
+                    <p><b>Axilas + Ingles + Pubis + Perianal + Medias Piernas + Pies</b></p>
+                </div>
+            </div>
+            <div class="oferta_fila espacio_abajo">
+                <div class="circulo_precio">69€</div>
+                <div class="description_oferta">
+                    <p><b>Axilas + Ingles + Pubis + Perianal + Facial + Piernas completas + Pies</b></p>
+                </div>
+            </div>
+
+            <div class="oferta_fila">
+                <div class="circulo_precio">79€</div>
+                <div class="description_oferta">
+                    <p><b>Cuerpo entero</b></p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="contenedor_ofertas ">
+            <h2 class="azul espacio_abajo">PRECIOS CHICO</h2>
+            <div class="oferta_fila espacio_abajo">
+                <div class="circulo_precio chicos_circulo_precio">25€</div>
+                <div class="description_oferta">
+                    <p><b>Perfilado de barba <br> + Cara + Cuello</b></p>
+                </div>
+            </div>
+
+            <div class="oferta_fila espacio_abajo">
+                <div class="circulo_precio chicos_circulo_precio">49€</div>
+                <div class="description_oferta">
+                    <p><b>Pecho + Abdomen + Hombros</b></p>
+                </div>
+            </div>
+            <div class="oferta_fila espacio_abajo">
+                <div class="circulo_precio chicos_circulo_precio">64€</div>
+                <div class="description_oferta">
+                    <p><b>Gluteos + Piernas Completas + Pies</b></p>
+                </div>
+            </div>
+
+            <div class="oferta_fila">
+                <div class="circulo_precio chicos_circulo_precio">109€</div>
+                <div class="description_oferta">
+                    <p><b>Cuerpo entero</b></p>
+                </div>
+            </div>
+
+        </div>
+
+        
+
+</div>
+
+
+<section class="contenedor_seccion espacio_seccion_abajo">
+    <div class="encabezado espacio_seccion_abajo espacio_seccion_arriba">
+        <h3>Depilación a tu medida</h3>
+        <h2>Zonas Sueltas</h2>
+    </div>
+
+    <section class="contenedor_seccion espacio_abajo">
+
+        <div class="contenedor_main_texto espacio_abajo">
+           
+                <p class="textos_principales">
+
+                    Elimina el vello de manera precisa y eficaz con nuestros tratamientos de zonas sueltas. Tú decides qué áreas quieres tratar y nosotros nos encargamos de ofrecerte una solución adaptada a tus necesidades.
+
+                    Con nuestra tecnología láser de última generación, garantizamos sesiones cómodas, rápidas y seguras, respetando todo tipo de pieles y proporcionando resultados visibles desde las primeras aplicaciones.
+                    
+                    Di adiós a la irritación y al crecimiento indeseado del vello y disfruta de una piel suave y cuidada durante todo el año.
+                    
+                    Reserva tu sesión y experimenta la diferencia.
+
+                </p>
+            
+        </div>
+
+    </section>
+   
+
+    <div class="contenedor_seccion_zonas">
+        <div class="tarjeta_zonas_sueltas">
+            <h3>ZONAS S</h3>
+            <div class="precio_zonas_sueltas"><span>9</span><span class="euro" style="font-size: 40px;">€</span></div>
+            <p>Mejillas, mentón, patillas, entrecejo, axilas, perianal, manos, pies, sienes, linea alba, labio superior, nuca/cuello, areolas, escote</p>
+        </div>
+        <div class="tarjeta_zonas_sueltas">
+            <h3>ZONAS M</h3>
+            <div class="precio_zonas_sueltas"><span>15/19</span><span class="euro" style="font-size: 40px;">€</span></div>
+            <p>Hombros, línea bañador, facial completo, medios brazos, perfilado de barba</p>
+        </div>
+        <div class="tarjeta_zonas_sueltas">
+            <h3>ZONAS L</h3>
+            <div class="precio_zonas_sueltas"><span>25/29</span><span class="euro" style="font-size: 40px;">€</span></div>
+            <p>Brazos, gluteos, abdomen, lumbares, medias piernas, torax</p>
+        </div>
+        <div class="tarjeta_zonas_sueltas">
+            <h3>ZONAS XL</h3>
+            <div class="precio_zonas_sueltas"><span>39/49</span><span class="euro" style="font-size: 40px;">€</span></div>
+            <p>Piernas completas, espalda completa, pecho completo</p>
+        </div>
+    </div>
+    
+    </div>
+
+
+</section>
+
+<section class="seccion_ofertas fondo_azul solomovil">
+    <div class="plan_amigo_titulo"><h2>Plan amigo</h2></div>  
+    <div class="plan_amigo_circulo_contenedor">
+        <div class="circulo_plan_amigo fade-in espacio_arriba">
+            <p class="size12">Al venir con un amigo</p>
+            <h2>15%</h2>
+            <p>DESCUENTO</p>
+            <p class="size8">En cualquiera de nuestros bonos</p>
+        </div>
+    </div>  
+    <div class="contenedor_main_texto mucho_espacio_abajo espacio_arriba">
+        <p class="textos_principales blanco">¡Ven con un amigo y ahorra juntos! Aprovecha un 15% de descuento en nuestros bonos de depilación láser al venir acompañado a nuestra clínica. Disfruta de la mejor tecnología en depilación láser y cuida tu piel mientras compartes la experiencia con quien tú elijas. ¡No dejes pasar esta oportunidad y reserva tu cita ahora!</p>
+    </div>
+    
+    <!--ESTO ES UN BOTON COMENTADO-->
+    <!-- <div class="contenedor_main_texto espacio_arriba">
+        <button class="estilos_botones background_blanco color_primario">Descubre nuestro plan amigo</button>
+    </div> -->
+    <!--ESTO ES UN BOTON COMENTADO CUANDO HAGAMOS PAGINA PLAN AMIGO O OFERTA ACTIVAR-->
+
+    </section>
+
+
+
+    <section class="seccion_ofertas_dos fondo_azul solodesktop"> 
+        <div class="plan_amigo_circulo_contenedor">
+            <div class="circulo_plan_amigo fade-in espacio_arriba">
+                <p class="size12">Al venir con un amigo</p>
+                <h2>15%</h2>
+                <p>DESCUENTO</p>
+                <p class="size8">En cualquiera de nuestros bonos</p>
+            </div>
+        </div>  
+        <div class="parte-dos-plan-amigo">
+        <div class="plan_amigo_titulo"><h2>Plan amigo</h2></div>
+        <div class="texto-descripcion-plan"> 
+        <div class="contenedor_main_texto espacio_arriba">
+            <p class="textos_principales blanco">¡Ven con un amigo y ahorra juntos! Aprovecha un 15% de descuento en nuestros bonos de depilación láser al venir acompañado a nuestra clínica. Disfruta de la mejor tecnología en depilación láser y cuida tu piel mientras compartes la experiencia con quien tú elijas. ¡No dejes pasar esta oportunidad y reserva tu cita ahora!</p>
+        </div>
+        <!--ESTO ES UN BOTON COMENTADO-->
+      
+        <!--ESTO ES UN BOTON COMENTADO CUANDO HAGAMOS PAGINA PLAN AMIGO O OFERTA ACTIVAR-->
+        </div>
+        </div>
+        
+        
+
+        
+
+
+    
+    </section>
+
+    <section class="contenedor_seccion espacio_seccion_arriba espacio_seccion_abajo">
+        <div class="encabezado espacio_seccion_abajo">
+            <h3>Testimonios</h3>
+            <h2>Opiniones de Depisana</h2>
+        </div>
+    
+        <!-- <div class="contenedor-testimonios">
+            <div class="testimonio fade-in">
+                <div class="contenedor_nombre_estrellas">
+                <p class="nombre-cliente color_negro">Marta Antique</p><br>
+                <div class="contenedor_estrellas">
+                <i class="fa-solid fa-star amarillo"></i>
+                <i class="fa-solid fa-star amarillo"></i>
+                <i class="fa-solid fa-star amarillo"></i>
+                <i class="fa-solid fa-star amarillo"></i>
+                <i class="fa-solid fa-star amarillo"></i>
+                </div>
+                </div>
+                <br>
+                <p class="texto-testimonio">"Me alegro de haber encontrado este centro!! Recomendable 100%. Es la primera vez que me hago el tratamiento Láser, y tengo que decir que he notado su efectividad desde la primera sesión. Las instalaciones, super limpio y aséptico. Y sobre todo el trato de Mariana y Érika, muy agradables y profesionales."</p>
+                <a href="https://g.co/kgs/b2wTnKu" target="_blank" rel="noopener noreferrer nofollow" class="color_primario w500"><i class="fa-brands fa-google"></i> Reseña de Google</a>
+            </div>
+            <div class="contenedor-testimonios">
+                <div class="testimonio fade-in">
+                    <div class="contenedor_nombre_estrellas">
+                    <p class="nombre-cliente color_negro">Laura López</p><br>
+                    <div class="contenedor_estrellas">
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    </div>
+                    </div>
+                    <br>
+                    <p class="texto-testimonio">"Fui a hacerme la depilación láser a su centro nuevo al lado de Nuevos Ministerios y quedé super contenta. Es indoloro y además está muy bien de precio. Es barato teniendo en cuenta el buen servicio que dan. Lo recomiendo mucho."</p>
+                    <a href="https://g.co/kgs/MSmkHzS" target="_blank" rel="noopener noreferrer nofollow" class="color_primario w500"><i class="fa-brands fa-google"></i> Reseña de Google</a>
+                </div>
+                <div class="contenedor-testimonios">
+                    <div class="testimonio fade-in">
+                        <div class="contenedor_nombre_estrellas">
+                        <p class="nombre-cliente color_negro">Enrique Sanchez</p><br>
+                        <div class="contenedor_estrellas">
+                        <i class="fa-solid fa-star amarillo"></i>
+                        <i class="fa-solid fa-star amarillo"></i>
+                        <i class="fa-solid fa-star amarillo"></i>
+                        <i class="fa-solid fa-star amarillo"></i>
+                        <i class="fa-solid fa-star amarillo"></i>
+                        </div>
+                        </div>
+                        <br>
+                        <p class="texto-testimonio">"Es la primera vez que me depilo la espalda y las axilas, muy contento.
+                            Apenas me enteré y con una sesión me sale muy poco pelo.
+                            Altamente comendable 👍👍" <br><br> </p>
+                        <a href="https://g.co/kgs/cFSCQKP" target="_blank" rel="noopener noreferrer nofollow" class="color_primario w500"><i class="fa-brands fa-google"></i> Reseña de Google</a>
+                    </div>
+            </div>
+        </div> -->
+        <!-- Contenedor del carrusel de testimonios con ID único -->
+<div id="swiper-testimonios" class="swiper">
+<div class="swiper-wrapper">
+    <!-- Slide 1 -->
+    <div class="swiper-slide">
+        <div class="contenedor-testimonios">
+            <div class="testimonio fade-in">
+                <p class="nombre-cliente">Marta Antique</p><br>
+                <div class="contenedor_estrellas">
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                </div>
+                <br>
+                <p class="texto-testimonio">"Me alegro de haber encontrado este centro!! Recomendable 100%. Es la primera vez que me hago el tratamiento Láser, y tengo que decir que he notado su efectividad desde la primera sesión. Las instalaciones, super limpio y aséptico. Y sobre todo el trato de Mariana y Érika, muy agradables y profesionales."</p>
+                <a href="https://g.co/kgs/b2wTnKu" target="_blank" rel="noopener noreferrer nofollow" class="color_primario"><i class="fa-brands fa-google"></i> Reseña de Google</a>
+            </div>
+
+            <div class="testimonio fade-in">
+                <p class="nombre-cliente">Laura López</p><br>
+                <div class="contenedor_estrellas">
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                </div>
+                <br>
+                <p class="texto-testimonio">"Fui a hacerme la depilación láser a su centro nuevo al lado de Nuevos Ministerios y quedé super contenta. Es indoloro y además está muy bien de precio. Es barato teniendo en cuenta el buen servicio que dan. Lo recomiendo mucho."</p>
+                <a href="https://g.co/kgs/MSmkHzS" target="_blank" rel="noopener noreferrer nofollow" class="color_primario"><i class="fa-brands fa-google"></i> Reseña de Google</a>
+            </div>
+
+            <div class="testimonio fade-in">
+                <p class="nombre-cliente ">Enrique Sanchez</p><br>
+                <div class="contenedor_estrellas">
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                </div>
+                <br>
+                <p class="texto-testimonio">"Es la primera vez que me depilo la espalda y las axilas, muy contento.
+                    Apenas me enteré y con una sesión me sale muy poco pelo.
+                    Altamente comendable 👍👍"</p>
+                <a href="https://g.co/kgs/cFSCQKP" target="_blank" rel="noopener noreferrer nofollow" class="color_primario"><i class="fa-brands fa-google"></i> Reseña de Google</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="swiper-slide">
+        <div class="contenedor-testimonios">
+            <div class="testimonio">
+                <p class="nombre-cliente">Rodrigo Hernández Martín</p><br>
+                <div class="contenedor_estrellas">
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                </div>
+                <br>
+                <p class="texto-testimonio">"¡Una experiencia increíble en Depilación Láser Nuevos Ministerios! He probado varios centros en Madrid, pero sin duda este es el mejor en cuanto a calidad y precios. Está ubicado en una zona muy céntrica, cerca de Azca, lo que lo hace muy accesible."</p>
+                <a href="https://maps.app.goo.gl/WSC9XUZd6snZnwny7" target="_blank" rel="noopener noreferrer nofollow" class="color_primario"><i class="fa-brands fa-google"></i> Reseña de Google</a>
+            </div>
+
+            <div class="testimonio">
+                <p class="nombre-cliente">Jaime Fernández</p><br>
+                <div class="contenedor_estrellas">
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                </div>
+                <br>
+                <p class="texto-testimonio">"Son grandes profesionales! Llevo ya varias sesiones en Depisana y no puedo poner ni una sola pega. Cuando el servicio es bueno hay que decirlo, y el que ofrecen aquí es inmejorable.
+                    Atentos en detalle, amables y confiables.
+                    Lo recomiendo 100%. El trato recibido en todo momento es excelente."</p>
+                <a href="https://maps.app.goo.gl/nm8Sx21FLwZ1NcqH7" target="_blank" rel="noopener noreferrer nofollow" class="color_primario"><i class="fa-brands fa-google"></i> Reseña de Google</a>
+            </div>
+
+            <div class="testimonio">
+                <p class="nombre-cliente">Carmen Merino Bueno</p><br>
+                <div class="contenedor_estrellas">
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                </div>
+                <br>
+                <p class="texto-testimonio">"Sitio recomendable al 100%.
+                    Empecé el tratamiento con Tania y lo seguí con Yurena. Me he sentido muy cómoda y muy bien atendida en cada una de las sesiones.
+                    Por otro lado, el establecimiento es un sitio muy limpio donde la temperatura siempre es la adecuada."</p>
+                <a href="https://g.co/kgs/kUjRDgm" target="_blank" rel="noopener noreferrer nofollow" class="color_primario"><i class="fa-brands fa-google"></i> Reseña de Google</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Slide 3 -->
+    <div class="swiper-slide">
+        <div class="contenedor-testimonios">
+            <div class="testimonio">
+                <p class="nombre-cliente">Cristina Plaza</p><br>
+                <div class="contenedor_estrellas">
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                </div>
+                <br>
+                <p class="texto-testimonio">"Una experiencia genial! Fuí para la prueba gratis el mes pasado y me marché con mi pack personalizado, me encantó porque no me dolió nada ! Después de varias experiencias fallidas por fin he encontrado un sitio que me funciona lo primero (porque con la primera sesión ya lo noté ) y que me tratan genial. Muy contenta, recomiendo."</p>
+                <a href="https://g.co/kgs/etErCSY" target="_blank" rel="noopener noreferrer nofollow" class="color_primario"><i class="fa-brands fa-google"></i> Reseña de Google</a>
+            </div>
+
+            <div class="testimonio">
+                <p class="nombre-cliente">Andrea Sánchez</p><br>
+                <div class="contenedor_estrellas">
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                </div>
+                <br>
+                <p class="texto-testimonio">"Trato super profesional, amabilidad, responsabilidad y simpatía. Volveré encantada. Depilación laser indoloro y sin esperas. La chica un amor. Te explican todo muy bien no falta detalle, además tiene sala de espera dentro de la habitación por si vas acompañada, en mi caso, mi hijo ha estado sentado conmigo en la cabina."</p>
+                <a href="https://g.co/kgs/5GXDjbs" target="_blank" rel="noopener noreferrer nofollow" class="color_primario"><i class="fa-brands fa-google"></i> Reseña de Google</a>
+            </div>
+
+            <div class="testimonio">
+                <p class="nombre-cliente">Beatriz Majuelo</p><br>
+                <div class="contenedor_estrellas">
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                    <i class="fa-solid fa-star amarillo"></i>
+                </div>
+                <br>
+                <p class="texto-testimonio">"Láser efectivo. Después de pasar por varios centros que se dedican a ello en Depisana he notado la diferencia desde la primera sesión. Trato inmejorable por parte de Yurena que me ha explicado y atendido a la perfección."</p>
+                <a href="https://g.co/kgs/NSWFwk2" target="_blank" rel="noopener noreferrer nofollow" class="color_primario"><i class="fa-brands fa-google"></i> Reseña de Google</a>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+<div class="swiper-pagination"><br><br></div>
+</div>
+<!-- <div class="swiper-pagination"></div> -->
+
+    </section>
+
+
+    
+
+</main>
+
+        <!-- <div class="contenedor_modal_verMas">
+
+            <div>
+                <h2 class="color_secundario espacio_abajo espacio_arriba">PRECIOS CHICA</h2>
+            </div>
+    
+            <div class="contenedor_ofertas ">
+                <div class="oferta_fila espacio_abajo">
+                    <div class="circulo_precio">29€</div>
+                    <div class="description_oferta">
+                        <p><b>Ingles + Pubis + Perianal</b></p>
+                    </div>
+                </div>
+
+                <div class="oferta_fila espacio_abajo">
+                    <div class="circulo_precio">55€</div>
+                    <div class="description_oferta">
+                        <p><b>Axilas + Ingles + Pubis + Perianal + Medias Piernas + Pies</b></p>
+                    </div>
+                </div>
+                <div class="oferta_fila espacio_abajo">
+                    <div class="circulo_precio">69€</div>
+                    <div class="description_oferta">
+                        <p><b>Axilas + Ingles + Pubis + Perianal + Facial + Piernas completas + Pies</b></p>
+                    </div>
+                </div>
+
+                <div class="oferta_fila">
+                    <div class="circulo_precio">79€</div>
+                    <div class="description_oferta">
+                        <p><b>Cuerpo entero</b></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                <h2 class="color_secundario espacio_abajo espacio_arriba">PRECIOS CHICO</h2>
+            </div>
+
+            <div class="contenedor_ofertas ">
+                <div class="oferta_fila espacio_abajo">
+                    <div class="circulo_precio chicos_circulo_precio">25€</div>
+                    <div class="description_oferta">
+                        <p><b>Perfilado de barba <br> + Cara + Cuello</b></p>
+                    </div>
+                </div>
+
+                <div class="oferta_fila espacio_abajo">
+                    <div class="circulo_precio chicos_circulo_precio">49€</div>
+                    <div class="description_oferta">
+                        <p><b>Pecho + Abdomen + Hombros</b></p>
+                    </div>
+                </div>
+                <div class="oferta_fila espacio_abajo">
+                    <div class="circulo_precio chicos_circulo_precio">64€</div>
+                    <div class="description_oferta">
+                        <p><b>Gluteos + Piernas Completas + Pies</b></p>
+                    </div>
+                </div>
+
+                <div class="oferta_fila">
+                    <div class="circulo_precio chicos_circulo_precio">109€</div>
+                    <div class="description_oferta">
+                        <p><b>Cuerpo entero</b></p>
+                    </div>
+                </div>
+
+            </div> -->
+
+</section>
+
+
+<!--SECCION FOOTER-->
+    <!-- <footer class="background_primario solomovil">
+        <div class="espacio_arriba"><img src="../images/Letra-blanca.png" alt=""></div>
+        <div class="columna-footer espacio_arriba">
+            <h4>Depilación láser hombre</h4>
+            <ul>
+                <li><a href="">Depilación láser espalda completa hombre</a></li>
+                <li><a href="">Depilación láser axilas hombre</a></li>
+                <li><a href="">Depilación láser piernas hombre</a></li>
+                <li><a href="">Depilación láser pecho completo hombre</a></li>
+                <li><a href="">Depilación láser genitales hombre</a></li>
+                <li><a href="">Depilación láser nuca hombre</a></li>
+                <li><a href="">Depilación láser barba hombre</a></li>
+                <li><a href="">Depilación láser orejas hombre</a></li>
+            </ul>
+            
+        </div>
+        <div class="columna-footer espacio_arriba">
+            <h4>Depilación láser mujer</h4>
+            <ul>
+                <li><a href="">Depilación láser axilas mujer</a></li>
+                <li><a href="">Depilación láser labio superior mujer</a></li>
+                <li><a href="">Depilación láser medias piernas mujer</a></li>
+                <li><a href="">Depilación láser mentón mujer</a></li>
+                <li><a href="">Depilación láser zona intima mujer</a></li>
+                <li><a href="">Depilación láser pubis mujer</a></li>
+                <li><a href="">Depilación láser ingles mujer</a></li>
+            </ul>
+        </div>
+        <div class="columna-footer espacio_arriba">
+            <h4>Conócenos:</h4>
+            <ul>
+                <li><a href="">Precios</a></li>
+                <li><a href="">Nuestras Instalaciones</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Precio Amigo</a></li>
+            </ul>
+        </div>
+        <h2 class="blanco espacio_arriba espacio_abajo">REDES SOCIALES</h2>
+        <div class="fila-footer">
+            <div class="contenedor-contacto">    
+                <a href="https://www.facebook.com/p/Depisana-100083395516307/"><i class="fa-brands fa-facebook-f"></i></a>
+                <div>
+                <p><b>Facebook</b></p>
+                </div>
+            </div>
+            <div class="contenedor-contacto">    
+                <a href="https://www.instagram.com/depisanalaser/"><i class="fa-brands fa-instagram"></i></a>
+                <div>
+                <p><b>Instagram</b></p>
+                </div>
+            </div>
+        </div>
+        <div class=""><img src="../images/Sin título-1.png" alt=""></div>
+        <div class="fila-footer condiciones espacio_arriba">
+            <p>Designed by Cristian Menjíbar López</p>
+            <p>© 2025 Depisana. Todos los derechos reservados. <br><a href="">Política de privacidad, condiciones de ofertas y aviso legal</a></p>
+        </div>
+        <div class="container_fixed_wp">
+           <a href="https://depisana.com/whatsapp"><img src="../images/WhatsApp.svg.webp" alt="WhatsAppicono"></a>
+        </div>
+    </footer> -->
+
+
+    <footer class="background_primario">
+        <div class="contenedor-footer-colum centro">
+           <img src="./images/Letra-blanca.png" alt="">
+        </div>
+        <div class="contenedor-footer-colum">
+        <div class="columna-footer-row">  
+         <div class="columna-footer-desktop">
+            <h4>Depilación láser hombre</h4>
+            <!-- <ul>
+                <li><a href="">Depilación láser espalda completa hombre</a></li>
+                <li><a href="">Depilación láser axilas hombre</a></li>
+                <li><a href="">Depilación láser piernas hombre</a></li>
+                <li><a href="">Depilación láser pecho completo hombre</a></li>
+                <li><a href="">Depilación láser genitales hombre</a></li>
+                <li><a href="">Depilación láser nuca hombre</a></li>
+                <li><a href="">Depilación láser barba hombre</a></li>
+                <li><a href="">Depilación láser orejas hombre</a></li>
+            </ul> -->
+         </div>
+         <div class="columna-footer-desktop">
+            <h4>Depilación láser mujer</h4>
+            <!-- <ul>
+                <li><a href="">Depilación láser axilas mujer</a></li>
+                <li><a href="">Depilación láser labio superior mujer</a></li>
+                <li><a href="">Depilación láser medias piernas mujer</a></li>
+                <li><a href="">Depilación láser mentón mujer</a></li>
+                <li><a href="">Depilación láser zona intima mujer</a></li>
+                <li><a href="">Depilación láser pubis mujer</a></li>
+                <li><a href="">Depilación láser ingles mujer</a></li>
+            </ul> -->
+         </div>
+         <div class="columna-footer-desktop">
+            <h4>Conócenos:</h4>
+            <ul>
+                <li><a href="">Precios</a></li>
+                <li><a href="">Nuestras Instalaciones</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Precio Amigo</a></li>
+            </ul>
+        </div>
+        <div class="columna-footer-desktop">
+            <h4>Redes Sociales</h4>
+            <div class="contenedor_rrss">
+                <a href="https://www.facebook.com/p/Depisana-100083395516307/" rel="nofollow noopener noreferrer" target="blank"><i class="fa-brands fa-facebook-f"></i><b>Facebook</b></a>
+                <a href="https://www.instagram.com/depisanalaser/" rel="nofollow noopener noreferrer" target="blank"><i class="fa-brands fa-instagram"></i><b>Instagram</b></p></a>
+                <div class=""><img src="./images/Sin título-1.png" alt=""></div>
+            </div> 
+        </div>
+        </div>
+        <div class="contenedor-footer-colum centro size12">
+            <p>Designed by Cristian Menjíbar López</p>
+            <p>© 2025 Depisana. Todos los derechos reservados. <br><a href="#">Política de privacidad, condiciones de ofertas y aviso legal</a></p>
+        </div>
+        </div>
+        <div class="container_fixed_wp">
+            <a href="https://depisana.com/whatsapp"><img src="./images/WhatsApp.svg.webp" alt="WhatsAppicono"></a>
+         </div>
+    </footer>
+
+
+    <!--SECCION FOOTER-->
+    <!-- Swiper CDN JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- JS -->
+    <script src="js/js.js"></script>
+    <script src="js/swipper-store.js"></script>
+    <script src="js/swipper-testimonios.js"></script>
+
+</body>
+</html>
