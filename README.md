@@ -20,15 +20,15 @@ Página web de presentación con estructura sencilla y navegación directa, orie
   <tr>
     <td align="center" valign="top" width="33%">
       <strong>Inicio</strong><br><br>
-      <img src="images/depisana.png" alt="Depisana - página de inicio">
+      <img src="images/depisana.png" alt="Depisana - página de inicio" width="800">
     </td>
     <td align="center" valign="top" width="33%">
       <strong>Precios</strong><br><br>
-      <img src="images/depisana2.png" alt="Depisana - precios">
+      <img src="images/depisana2.png" alt="Depisana - precios" width="800">
     </td>
     <td align="center" valign="top" width="33%">
       <strong>Servicios</strong><br><br>
-      <img src="images/depisana3.png" alt="Depisana - sección de servicios">
+      <img src="images/depisana3.png" alt="Depisana - sección de servicios" width="800">
     </td>
   </tr>
 </table>
