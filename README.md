@@ -16,7 +16,7 @@ Página web de presentación con estructura sencilla y navegación directa, orie
 - Enlaces directos a canales de contacto (WhatsApp y reservas)
 
 ## Capturas
-<table>
+<table align="center">
   <tr>
     <td align="center" valign="top" width="33%">
       <strong>Inicio</strong><br><br>
